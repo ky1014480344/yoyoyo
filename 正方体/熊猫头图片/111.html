@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+    
+    a{
+        display: inline-block;
+        border: 1px solid gray;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        position: absolute;
+        top: 150px;
+        left: 100px;
+    }
+    div{
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+       margin-left:1000px ;
+     
+        
+    }
+    ul{
+        list-style: none;
+        position: absolute;
+        height: 200px;
+        width: 2000px;
+    }
+    ul li{
+        float: left;
+        width: 200px;
+        height: 200px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div>
+    <ul style="left:-1000px">
+        <li><img src="555.jpg" alt="111"></li>
+        <li><img src="111.jpg" alt="111"></li>
+        <li><img src="222.jpg" alt="111"></li>
+        <li><img src="333.jpg" alt="111"></li>
+        <li><img src="555.jpg" alt="111"></li>
+        <li><img src="111.jpg" alt="111"></li>
+    </ul>
+    <div><a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a>
+    <a href="#"></a></div>
+    </div>
+
+
+    <script>
+        var ulLeft = document.getElementsByTagName("ul")[0];
+    var timer = setInterval(function(){
+        ulLeft.style.left = parseInt(ulLeft.style.left) + 200 + "px";
+        if(parseInt(ulLeft.style.left) == 200){
+            ulLeft.style.left = "-1000px";
+        }
+    },2000)
+
+    
+    
+    
+    
+    </script>
+</body>
+</html>
