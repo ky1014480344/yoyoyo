@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3D</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0
+    }
+    .wrapper{
+        position: relative;
+        perspective: 1000px;
+        height: 150px;
+        width: 300px;
+        margin: 100px auto;
+    }
+    .banner{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -56px;
+        margin-left: -141px;
+        height: 112px;
+        width: 282px;
+        transform-style: preserve-3d;
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        /* perspective: 800px; */
+        /* animation: move 20s  infinite linear; */
+        transition: transform 2s ;
+    }
+    @keyframes move{
+        0%{transform: rotateY(0deg) }
+        100%{transform: rotateY(-360deg)}
+    }
+    .banner li{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -56px;
+        margin-left: -100px;
+        background-size: 100% 100%;
+        background-image: url("http://pic37.nipic.com/20140110/17563091_221827492154_2.jpg");
+        background-repeat: no-repeat;
+        height: 112px;
+        width: 200px;
+        list-style: none;
+        /* opacity: 0.5; */
+    }
+    .banner .banner-0{
+        transform: translateZ(200px)
+    }
+    .banner .banner-60{
+        transform: rotateY(60deg) translateZ(200px)
+    }
+    .banner .banner-120{
+        transform: rotateY(120deg) translateZ(200px)
+    }
+    .banner .banner-180{
+        transform: rotateY(180deg) translateZ(200px)
+    }
+    .banner .banner-240{
+        transform: rotateY(240deg) translateZ(200px)
+    }
+    .banner .banner-300{
+        transform: rotateY(300deg) translateZ(200px)
+    }
+    .wrapper .left{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -150px;
+        /* border: 1px solid gray; */
+        border-radius: 50%;
+        line-height: 50px;
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;   
+    }
+    .wrapper .right{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right:-150px;
+        /* border: 1px solid gray; */
+        border-radius: 50%;
+        line-height: 50px;
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <ul class="banner">
+        <li class="banner-0">1</li>
+        <li class="banner-60">2</li>
+        <li class="banner-120">3</li>
+        <li class="banner-180">4</li>
+        <li class="banner-240">5</li>
+        <li class="banner-300">6</li>
+    </ul>
+    <span class="left" onclick="left()"><</span>
+    <span class="right" onclick="right()" >></span>
+</div>
+<script>
+    var banner = document.getElementsByClassName("banner")[0];
+    var deg = 0;
+function left(){
+    deg += 60;
+    banner.style.transform = "rotateY("+deg+"deg)"
+}
+function right(){
+    deg -= 60;
+    banner.style.transform = "rotateY("+deg+"deg)"
+}
+
+</script>
+</body>
+</html>
