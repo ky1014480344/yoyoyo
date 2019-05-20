@@ -1,0 +1,125 @@
+{
+  "ret": true,
+  "data": {
+    "swiperList": [{
+      "id": "0001",
+      "imgUrl": "https://imgs.qunarzz.com/piao/fusion/1609/4d/3dc09bcc290f0c02.jpg_750x200_09c97d67.jpg"
+    }, {
+      "id": "0002",
+      "imgUrl": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/9f39c398e63315d7375efd08028f040e.jpg_750x200_4f536dd8.jpg"
+    }, {
+      "id": "0003",
+      "imgUrl": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/87a224d0349d94a11e97f31aa1aba4f5.jpg_750x200_1f78af87.jpg"
+    }, {
+      "id": "0004",
+      "imgUrl": "https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20195/7c7963c2b74b0f4f19ae3972f75b7f18.jpg_750x200_347ecfa5.jpg"
+    }],
+    "iconList": [{
+        "id": 1,
+        "text": "热门景点热门景点热门景点热门景点热门景点热门景点",
+        "imageUrl": "https://imgs.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png"
+      },
+      {
+        "id": 2,
+        "text": "一日游",
+        "imageUrl": "https://imgs.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png"
+      },
+      {
+        "id": 3,
+        "text": "杭州必游",
+        "imageUrl": "https://imgs.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png"
+      },
+      {
+        "id": 4,
+        "text": "踏青赏花",
+        "imageUrl": "https://imgs.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png"
+      },
+      {
+        "id": 5,
+        "text": "印象西湖",
+        "imageUrl": "https://imgs.qunarzz.com/piao/fusion/1803/17/99402a22ce4af302.png"
+      },
+      {
+        "id": 6,
+        "text": "千岛湖",
+        "imageUrl": "https://imgs.qunarzz.com/piao/fusion/1803/75/eca3ce656c886502.png"
+      },
+      {
+        "id": 7,
+        "text": "杭州野生",
+        "imageUrl": "https://imgs.qunarzz.com/piao/fusion/1803/47/c2b659e048b11602.png"
+      },
+      {
+        "id": 8,
+        "text": "西溪湿地",
+        "imageUrl": "https://imgs.qunarzz.com/piao/fusion/1803/b8/c5dcdb58deec2402.png"
+      },
+      {
+        "id": 9,
+        "text": "西溪",
+        "imageUrl": "https://imgs.qunarzz.com/piao/fusion/1803/b8/c5dcdb58deec2402.png"
+      }
+    ],
+    "recommendList": [{
+        "id": "0001",
+        "recommendUrl": "https://imgs.qunarzz.com/sight/p0/1904/a2/a23ae48aac0c0ab2a3.water.jpg_200x200_38cef490.jpg",
+        "title": "西溪国家湿地洪园",
+        "text": "西溪湿地•洪园春季游园会"
+      },
+      {
+        "id": "0002",
+        "recommendUrl": "https://imgs.qunarzz.com/sight/p0/1903/e0/e0e0c6ca274ad49aa3.img.jpg_200x200_0f072efb.jpg",
+        "title": "西溪国家湿地公园·周家村",
+        "text": "美若仙境，《非诚勿扰》取景地"
+      },
+      {
+        "id": "0003",
+        "recommendUrl": "https://imgs.qunarzz.com/sight/p0/1901/8c/8c1d317bc954ce06a3.water.jpg_200x200_94fd133d.jpg",
+        "title": "宋城千古情",
+        "text": "世界三大名秀之一，杭州宋城的灵魂"
+      },
+      {
+        "id": "0004",
+        "recommendUrl": "https://imgs.qunarzz.com/sight/p0/1901/60/601b17dc97036e67a3.water.jpg_200x200_fc8a796c.jpg",
+        "title": "杭州烂苹果乐园",
+        "text": "杭州烂苹果乐园"
+      },
+      {
+        "id": "0005",
+        "recommendUrl": "https://imgs.qunarzz.com/sight/p0/1709/28/288fbeccc335f774a3.img.jpg_200x200_4a81bde9.jpg",
+        "title": "印象西湖",
+        "text": "印象西湖"
+      }
+    ],
+    "weekendList":[{
+      "id":"0001",
+      "weekendUrl":"https://imgs.qunarzz.com/sight/source/1505/4e/3e87ee62e59cdb.jpg_r_640x214_fe6cc902.jpg",
+      "title":"杭州必打卡",
+      "text":"杭州，前世今生与你有一场美丽约会"
+  },
+  {
+      "id":"0002",
+      "weekendUrl":"https://imgs.qunarzz.com/sight/source/1811/52/b6776b49d27025.jpg_r_640x214_35ae205c.jpg",
+      "title":"杭州必打卡",
+      "text":"杭州，前世今生与你有一场美丽约会"
+  },
+  {
+      "id":"0003",
+      "weekendUrl":"https://imgs.qunarzz.com/sight/source/1505/9f/7d45cc38259e0.jpg_r_640x214_156f4299.jpg",
+      "title":"杭州必打卡",
+      "text":"杭州，前世今生与你有一场美丽约会"
+  },
+  {
+      "id":"0004",
+      "weekendUrl":"https://imgs.qunarzz.com/sight/source/1505/c1/1178c5696fcf57.jpg_r_640x214_a69542c6.jpg",
+      "title":"杭州必打卡",
+      "text":"杭州，前世今生与你有一场美丽约会"
+  },
+  {
+      "id":"0005",
+      "weekendUrl":"https://imgs.qunarzz.com/sight/source/1505/bc/83feb2e003d0dd.jpg_r_640x214_0b7269b8.jpg",
+      "title":"杭州必打卡",
+      "text":"杭州，前世今生与你有一场美丽约会"
+  }]
+  }
+}
