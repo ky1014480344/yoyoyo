@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    .bcg{
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(rgb(104, 202, 235)), to(#f6f6f8));
+        
+    }
+    .screen{
+        position: relative;
+        width: 600px;
+        height: 500px;
+        margin: 20px auto;
+        background: #ffffff;
+        overflow: hidden;
+    }
+    .screen video{
+        position: absolute;
+        width: 600px;
+        height: 500px;
+    }
+    .screen span{
+            position: absolute;
+            display: inline-block;
+            white-space: nowrap
+        }
+    .input{
+        margin-left: 40%
+    }
+    </style>
+</head>
+<body>
+    <div class="bcg">
+        <div class="screen">
+                <video  controls="controls" 
+                        autoplay="autoplay" 
+                        
+                        src="http://upos-hz-mirrorkodou.acgvideo.com/upgcxcode/48/38/86133848/86133848-1-6.mp4?e=ig8euxZM2rNcNbug7WdVtWug7WdVNEVEuCIv29hEn0l5QK==&deadline=1558153302&gen=playurl&nbs=1&oi=3078646561&os=kodou&platform=html5&trid=acdd916396e64c48b473e8a10a3c4dfc&uipk=5&upsig=e6919a1e131b9367017e388ef608084e&uparams=e,deadline,gen,nbs,oi,os,platform,trid,uipk">
+                    </video>
+        </div>
+        <div class="input">
+            <input  class="inputMessage" type="text" placeholder="请输入弹幕">
+            <button id = "btn">发送</button>
+        </div>
+    </div>
+
+<script>
+var screen = document.getElementsByClassName("screen")[0];
+var input  = document.getElementsByClassName("inputMessage")[0];
+var btn  = document.getElementById("btn");
+input.onclick = function(){
+    this.value = "";
+}
+btn.onclick = function(){
+    if(input.value == ""){
+        alert("请输入弹幕")
+    }
+    else{
+        createDan()
+    }
+}
+
+function createDan(value){
+    var span1 = document.createElement("span");
+        span1.innerText = value ||input.value;
+        var sFontSize = parseInt(Math.random()*16+16);//随机大小文字
+        var sFonrColor = "#" + Math.floor(Math.random()*1677215).toString(16);
+        
+        var sMax = screen.offsetHeight - sFontSize;
+        var sMin = screen.offsetTop; 
+        var sHeight = Math.floor(Math.random()*(sMax-sMin-100)+sMin);
+        
+        span1.style.color = sFonrColor;
+        span1.style.fontSize = sFontSize + "px";
+        span1.style.marginTop = sHeight + "px";
+        
+        var a=600;
+        var timer = setInterval(function(){
+            span1.style.marginLeft = a + "px";
+            if(a>-span1.offsetWidth){
+                a -=2;
+                screen.appendChild(span1);
+            }
+            else{
+                clearInterval(timer);
+                span1.parentNode.removeChild(span1)
+            }
+
+        },20)
+}
+setInterval(function(){
+    createDan("鸡你太美")
+},500)
+
+</script>
+
+
+</body>
+</html>
